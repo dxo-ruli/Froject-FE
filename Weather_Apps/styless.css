@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #5b548a, #00feba);
+    color: #fff;
+    margin: 50px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 5px 25px;         /*tiap sisi menjadi tebal*/
+    height: 50px;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 1em;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 4.2em;
+}
+
+.weather{
+    align-items: center;
+}
+
+.weather .weather-icon{
+    width: 50%;
+    height: 50%;
+}
+
+.weather h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.weather h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 35%;
+    margin-right: 10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.details img{
+    width: 3.5em;
+}
+
+.humidity, .wind{
+    font-size: 20px;
+    margin-top: -6px;
+    font-weight: 700;
+}
+
+.info{
+    text-align: left;
+}
+
+.weather{
+    display: none; /*sembunyikan dulu, nanti klo udh klik searchBtn baru show*/
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    font-style: italic;
+    display: none;      /*sembunyikan dulu, nanti klo error baru show*/
+}
